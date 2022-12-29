@@ -8,7 +8,7 @@ const Bar = styled.div`
 
 const Title = styled.h1`
     margin: 0%;
-    color: red ;
+    color: blue;
 `
 
 const TopBar = () => {
