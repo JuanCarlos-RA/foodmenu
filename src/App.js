@@ -8,7 +8,7 @@ import FoodView from './views/foodView';
 
 const Content = styled.div` 
 `
-const Padre = styled.div`
+const Father = styled.div`
   width:100%;
   height:100%;
   position:absolute;
@@ -18,7 +18,7 @@ const Padre = styled.div`
 
 function App() {
   return (
-    <Padre>
+    <Father>
       <TopBar />
       <Content>
         <Routes>
@@ -26,7 +26,7 @@ function App() {
           <Route path='/foodView/*' element={<FoodView />} />
         </Routes>
       </Content>
-    </Padre>
+    </Father>
   );
 }
 
