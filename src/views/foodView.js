@@ -8,8 +8,8 @@ const FoodView = () => {
 
     return (
         <div>
-            {/* <h1>Comidas de tipo: {food_id}</h1>
-            Dependiendo del food_id, se mostrara una carta distinta */}
+            <h1>Comidas de tipo: {food_id}</h1>
+            {/* Dependiendo del food_id, se mostrara una carta distinta */} 
             <HamburgerCards />
         </div>
 
