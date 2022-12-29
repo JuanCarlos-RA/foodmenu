@@ -22,7 +22,6 @@ const Container = styled.div`
     padding: 2px 16px;
     background-color: white ;
     justify-content: space-between;
-
 `
 
 const Title = styled.h4`
@@ -33,7 +32,6 @@ const P = styled.p`
     align-items: center;
 
 `
-
 
 //La primera idea que tengo en que solo se muestre una imagen con su nombre y precio, y al hacer cilck se extiende y da más detalles
 const Card = ({ name, description, price, url }) => {// Pordria tener otro campo para saber si cuenta con algun acompañamiento (Actualmente esto se maneja en la descripcion)

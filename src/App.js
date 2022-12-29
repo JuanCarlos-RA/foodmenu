@@ -7,24 +7,26 @@ import FoodView from './views/foodView';
 
 
 const Content = styled.div` 
-  /* margin:0%;
-  padding:0% ; */
+`
+const Father = styled.div`
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  bottom:0;
 `
 
 function App() {
   return (
-    <div>
+    <Father>
       <TopBar />
       <Content>
         <Routes>
           <Route path='/' element={<MainView />} />
           <Route path='/foodView/*' element={<FoodView />} />
         </Routes>
-
       </Content>
-    </div>
-
-
+    </Father>
   );
 }
 
