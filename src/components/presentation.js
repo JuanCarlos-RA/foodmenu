@@ -5,7 +5,15 @@ const Content = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: violet ;
+    background-color: grey ;
+    margin:4px;
+    
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    
 `
 
 const Presentation = () => {

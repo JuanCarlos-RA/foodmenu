@@ -16,8 +16,7 @@ const Img = styled.img`
 const Container = styled.div` 
     /* Este margin-top esta cubriendo un bug de una pequeña franja que 
     queda entre la imagen y el container (Me parece que es una mala practica)*/
-    margin-top: -5px ; 
-
+    margin-top: -5px ;
     display: flex;
     padding: 2px 16px;
     background-color: white ;

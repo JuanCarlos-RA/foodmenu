@@ -7,9 +7,19 @@ const BtnLink = styled(Link)`
 `
 
 const Btn = styled.button` 
-    display: block ;
-    margin: 0px auto;
+    float: left;
+    font-size: x-small;
     margin-top: 10px ;
+    margin-bottom:10px;
+    margin-left: 10px ;
+    margin-right:5px;
+    height: 120px;
+    width: 170px;
+    align-items: left ;
+    border-radius: 10% ;
+    border-color: #FF8303;
+    border-spacing: 10px  ;
+    
 `
 
 const Button = ({ children }) => {
