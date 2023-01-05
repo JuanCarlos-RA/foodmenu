@@ -1,6 +1,4 @@
 import { Routes, Route } from 'react-router-dom'
-
-import TopBar from "./components/topBar";
 import styled from "styled-components";
 import MainView from "./views/mainView";
 import FoodView from './views/foodView';
@@ -19,7 +17,6 @@ const Father = styled.div`
 function App() {
   return (
     <Father>
-      <TopBar />
       <Content>
         <Routes>
           <Route path='/' element={<MainView />} />
