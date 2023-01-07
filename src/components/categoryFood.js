@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
 
 const Categoryboard = styled.div`
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  */
@@ -13,7 +14,7 @@ const Categoryboard = styled.div`
     background-color: #1B1A17 ;
     text-align: center;
 `
-const FoodsImg = styled.img`
+const FoodImg = styled.img`
     width:160px ;
     height:105px ;
     border-radius: 5% 5% 0 0;
@@ -24,15 +25,18 @@ const Title = styled.h4`
     color: #FF8303;
     
 `
-const CategoryFood = ({ cate, url }) => {
+
+const BtnLink = styled(Link)`
+    text-decoration-line: none ;
+`
+const CategoryFood = ({ category, url }) => {
     return (
-
-        <Categoryboard>
-
-            <FoodsImg src={url} alt="food" />
-            <Title>{cate}</Title>
-
-        </Categoryboard>
+        <BtnLink to={'/foodView/' + category}>
+            <Categoryboard>
+                <FoodImg src={url} alt="food" />
+                <Title>{category}</Title>
+            </Categoryboard>
+        </BtnLink>
     )
 }
 

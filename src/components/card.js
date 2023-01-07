@@ -8,8 +8,8 @@ const Cardboard = styled.div`
     border-radius: 5% 5% 0 0;
 `
 const Img = styled.img`
-    width:100% ;
-    height:100% ;
+    width:220px ;
+    height:210px ;
     border-radius: 5% 5% 0 0;
 `
 
