@@ -23,6 +23,7 @@ const MainView = () => {
                 <CategoryFood category={"NACHOS"} url={"https://iambaker.net/wp-content/uploads/2019/07/chili-cheese-nacho-final.jpg"} />
                 <CategoryFood category={"SANDWICH"} url={"https://imag.bonviveur.com/sandwich-vegetal-con-atun-y-mayonesa_1000.webp"} />
                 <CategoryFood category={"PATACONES"} url={"https://gustmas.com/wp-content/uploads/2018/10/receta-patacones-peruanos-crocantes.jpg"} />
+                <CategoryFood category={"BURRITOS"} url={"https://gustmas.com/wp-content/uploads/2018/10/receta-patacones-peruanos-crocantes.jpg"} />
                 <CategoryFood category={"ALITAS"} url={"https://images.hola.com/imagenes/cocina/recetas/20200205159814/alitas-de-pollo-a-la-americana-buffalo-wings/0-778-671/aitas-de-pollo-a-la-americana-o-buffalo-wings-t.jpg?tx=w_1200"} />
                 <CategoryFood category={"CARNES"} url={"https://cdn.shopify.com/s/files/1/0003/1916/0381/articles/asado-perfecto-1.jpg?v=1574172033"} />
                 <CategoryFood category={"TACOS"} url={"https://easyrecetas.com/wp-content/uploads/2020/07/Receta-de-Tacos-de-Res.jpg"} />

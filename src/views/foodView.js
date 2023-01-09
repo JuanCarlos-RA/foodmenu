@@ -38,6 +38,13 @@ const FoodView = () => {
                     <SandwichCards />
                 </div>
             );
+        case 'BURRITOS':
+            return (
+                <div>
+                    <TopBar />
+                    <BurritoCards />
+                </div>
+            );
         case 'PATACONES':
             return (
                 <div>
@@ -50,7 +57,7 @@ const FoodView = () => {
             return (
                 <div>
                     <TopBar />
-                    <wingCards />
+                    <WingCards />
                 </div>
             );
         case 'CARNES':
@@ -175,7 +182,10 @@ const HamburgerCards = () => {
 const QuesadillaCards = () => {
     return (
         <CardsContainer>
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
+            <Card name={"Quesadilla Mechada"} url={"/sinImagen.jpg"} description={"Tortilla de harina, Carne Mechada, Queso fundido, Guacamole y Salsas. Acompañada de papas fritas o papas en gajos."} price={"4.250"} />
+            <Card name={"Quesadilla de Pollo"} url={"/sinImagen.jpg"} description={"Tortilla de harina, Pollo en fajitas, Queso fundido, Guacamole y Salsas. Acompañada de papas fritas o papas en gajos."} price={"4.250"} />
+            <Card name={"Quesadilla de Lomo"} url={"/sinImagen.jpg"} description={"Tortilla de harina, Lomo en fajitas, Queso fundido, Guacamole y Salsas. Acompañada de papas fritas o papas en gajos."} price={"4.550"} />
+            <Card name={"Hot Quesadilla"} url={"/sinImagen.jpg"} description={"Tortilla de harina, Carne mechada, Chile jalapeño, Queso fundido, Guacamole, Salsa picante Mamen y salsas. Acompañada de papas fritas o papas en gajos."} price={"4.350"} />
         </CardsContainer>
     )
 }
@@ -183,8 +193,10 @@ const QuesadillaCards = () => {
 const NachoCards = () => {
     return (
         <CardsContainer>
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
+            <Card name={"Nacho Birria"} url={"/sinImagen.jpg"} description={"Tortillas tostadas, Frijoles molidos, Carne birria, Queso fundido, Queso cheddar y Guacamole."} price={"4.250"} />
+            <Card name={"Hot Nacho"} url={"/sinImagen.jpg"} description={"Tortillas tostadas, Frijoles molidos picantes, Carne mechada, Chile jalapeño, Salsa picante Mamen, Queso fundido, Queso cheddar y Guacamole."} price={"3.850"} />
+            <Card name={"Nachos de Pollo"} url={"/sinImagen.jpg"} description={"Tortillas tostadas, Frijoles molidos, Fajitas de pollo, Queso fundido, Queso cheddar y Guacamole."} price={"3.750"} />
+            <Card name={"Papa Nachos"} url={"/sinImagen.jpg"} description={"Papas fritas, Frijoles molidos, Carne mechada, Queso fundido, Queso cheddar y Guacamole."} price={"3.750"} />
         </CardsContainer>
     )
 }
@@ -192,8 +204,19 @@ const NachoCards = () => {
 const SandwichCards = () => {
     return (
         <CardsContainer>
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
+            <Card name={"Sandwich de Lomo"} url={"/sinImagen.jpg"} description={"Pan blanco, Lomo salteado, Lechuga, Tomate, Queso amarillo, Queso blanco y Salsas. Acompañado de papas fritas o papas en gajos."} price={"3.950"} />
+            <Card name={"Sandwich de Mechada"} url={"/sinImagen.jpg"} description={"Pan blanco, Carne mechada, Lechuga, Tomate, Queso amarillo, Queso blanco y Salsas. Acompañado de papas fritas o papas en gajos."} price={"3.550"} />
+            <Card name={"Sandwich de Pollo"} url={"/sinImagen.jpg"} description={"Pan blanco, Filet de pollo, Lechuga, Tomate, Queso amarillo, Queso blanco y Salsas. Acompañado de papas fritas o papas en gajos."} price={"3.550"} />
+        </CardsContainer>
+    )
+}
+
+const BurritoCards = () => {
+    return (
+        <CardsContainer>
+            <Card name={"Burrito Mechado"} url={"/sinImagen.jpg"} description={"Tortilla de harina, Carne mechada, Frijoles molidos, Queso fundido, Lechuga, Pico de gallo, Guacamole y Salsas."} price={"4.250"} />
+            <Card name={"Burrito de Lomo"} url={"/sinImagen.jpg"} description={"Tortilla de harina, Lomo salteado, Frijoles molidos, Queso fundido, Lechuga, Pico de gallo, Guacamole y Salsas."} price={"4.550"} />
+            <Card name={"Burrito de Pollo"} url={"/sinImagen.jpg"} description={"Tortilla de harina, Filet de pollo, Frijoles molidos, Queso fundido, Lechuga, Pico de gallo, Guacamole y Salsas."} price={"4.250"} />
         </CardsContainer>
     )
 }
@@ -201,16 +224,17 @@ const SandwichCards = () => {
 const PataconCards = () => {
     return (
         <CardsContainer>
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
+            <Card name={"Patacón de Mechada"} url={"/sinImagen.jpg"} description={"Patacón, Carne mechada, Frijoles molidos, Lechuga, Pico de gallo, Guacamole y Salsas."} price={"3.650"} />
+            <Card name={"Patacón de Lomo"} url={"/sinImagen.jpg"} description={"Patacón, Lomo salteado, Frijoles molidos, Lechuga, Pico de gallo, Guacamole y Salsas."} price={"3.950"} />
+            <Card name={"Patacón de Pollo"} url={"/sinImagen.jpg"} description={"Patacón, Pollo salteado, Frijoles molidos, Lechuga, Pico de gallo, Guacamole y Salsas."} price={"3.650"} />
         </CardsContainer>
     )
 }
-const wingCards = () => {
+const WingCards = () => {
     return (
         <CardsContainer>
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
+            <Card name={""} url={"/sinImagen.jpg"} description={""} price={""} />
+            <Card name={""} url={"/sinImagen.jpg"} description={""} price={""} />
         </CardsContainer>
     )
 }
@@ -219,8 +243,9 @@ const wingCards = () => {
 const MeatCards = () => {
     return (
         <CardsContainer>
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
+            <Card name={"Costilla entera estilo St Louis, Papas fritas o papas en gajos"} url={"/sinImagen.jpg"} description={""} price={"19.850"} />
+            <Card name={"1/2 costilla estilo St Louis, Papas fritas o papas en gajos"} url={"/sinImagen.jpg"} description={""} price={"11.170"} />
+            <Card name={"1/4 costilla estilo St Louis, Papas fritas o papas en gajos"} url={"/sinImagen.jpg"} description={""} price={"7.550"} />
         </CardsContainer>
     )
 }
@@ -228,8 +253,8 @@ const MeatCards = () => {
 const TacoCards = () => {
     return (
         <CardsContainer>
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
+            <Card name={""} url={"/sinImagen.jpg"} description={""} price={""} />
+            <Card name={""} url={"/sinImagen.jpg"} description={""} price={""} />
         </CardsContainer>
     )
 }
@@ -238,31 +263,18 @@ const TacoCards = () => {
 const MixedDisheCards = () => {
     return (
         <CardsContainer>
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
+            <Card name={""} url={"/sinImagen.jpg"} description={""} price={""} />
+            <Card name={""} url={"/sinImagen.jpg"} description={""} price={""} />
+            <Card name={""} url={"/sinImagen.jpg"} description={""} price={""} />
         </CardsContainer>
     )
 }
-
-
-
-
-const AdditionalCards = () => {
-    return (
-        <CardsContainer>
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
-            <Card name={"Mix Burger"} url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"} description={"Pan artesanal, Torta de carne artesanal de 200g, Filet de pollo, Chuleta ahumada, Tocineta, Cebolla caramelizada y Salsa BQQ. Acompañada de papas fritas o papas en gajos."} price={"5.950"} />
-        </CardsContainer>
-    )
-}
-
-
-
 
 const ExtraCards = () => {
     return (
         <CardsContainer>
-
+            <Card name={""} url={"/sinImagen.jpg"} description={""} price={""} />
+            <Card name={""} url={"/sinImagen.jpg"} description={""} price={""} />
         </CardsContainer>
     )
 }
