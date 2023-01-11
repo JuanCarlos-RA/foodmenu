@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
 import * as palette from '../utils/colorVariables'
 
 const Categoryboard = styled.div`
@@ -14,7 +15,7 @@ const Categoryboard = styled.div`
     background-color: ${palette.secondColor} ;
     text-align: center;
 `
-const FoodsImg = styled.img`
+const FoodImg = styled.img`
     width:160px ;
     height:105px ;
     border-radius: 5% 5% 0 0;
@@ -25,15 +26,18 @@ const Title = styled.h4`
     color: ${palette.thirdColor};
     
 `
-const CategoryFood = ({ cate, url }) => {
+
+const BtnLink = styled(Link)`
+    text-decoration-line: none ;
+`
+const CategoryFood = ({ category, url }) => {
     return (
-
-        <Categoryboard>
-
-            <FoodsImg src={url} alt="food" />
-            <Title>{cate}</Title>
-
-        </Categoryboard>
+        <BtnLink to={'/foodView/' + category}>
+            <Categoryboard>
+                <FoodImg src={url} alt="food" />
+                <Title>{category}</Title>
+            </Categoryboard>
+        </BtnLink>
     )
 }
 
