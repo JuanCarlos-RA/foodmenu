@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as palette from '../utils/colorVariables'
 
 const Bar = styled.div` 
     background-color: transparent;
@@ -19,7 +20,7 @@ const Bar = styled.div`
 const Title = styled.h1`
 
     margin: 0%;
-    color: white;
+    color: ${palette.fourthColor};
     text-decoration: underline;
 
 `
@@ -35,12 +36,9 @@ const Title = styled.h1`
 const TopBar = () => {
     return (
         <Bar>
-            
             <Title>
                 CUQUI'S FOOD
             </Title>
-            
-
         </Bar>
     )
 }
