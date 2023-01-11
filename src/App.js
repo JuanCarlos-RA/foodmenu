@@ -2,9 +2,11 @@ import { Routes, Route } from 'react-router-dom'
 import styled from "styled-components";
 import MainView from "./views/mainView";
 import FoodView from './views/foodView';
+import * as palette from './utils/colorVariables'
 
 
 const Content = styled.div` 
+  background-color: ${palette.firstColor};
 `
 const Father = styled.div`
   width:100%;
