@@ -34,7 +34,7 @@ const Container = styled.div`
     display: flex;
     background-color: ${palette.secondColor} ;
     justify-content: space-between;
-    /* das */
+    /* dassda */
 `
 
 const Title = styled.h4`
