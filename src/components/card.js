@@ -1,16 +1,30 @@
 import styled from "styled-components"
-
+import * as palette from '../utils/colorVariables'
 
 const Cardboard = styled.div` 
-    display: inline-block ;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 5% ;
-    border-radius: 5% 5% 0 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    box-shadow: ${palette.fifthColor} 0px 2px 4px, ${palette.sixthColor} 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5% 5% 2% 2%;
+    border: 2px solid ${palette.secondColor};
+    background-color: ${palette.seventhColor} ;
+    margin-bottom: 20px;
+    width: 320px;
+    height: 250px;
+    
 `
+
 const Img = styled.img`
-    width:220px ;
-    height:210px ;
-    border-radius: 5% 5% 0 0;
+    
+    width:150px ;
+    height:150px ;
+    border: 2px solid ${palette.secondColor};
+    border-radius: 8% 5% 0 0;
+    margin-bottom: 20% ;
+    margin-top: 0.6%;
+    margin-left: 0.6% ;
+    
 `
 
 const Container = styled.div` 
@@ -18,17 +32,26 @@ const Container = styled.div`
     queda entre la imagen y el container (Me parece que es una mala practica)*/
     margin-top: -5px ;
     display: flex;
-    padding: 2px 16px;
-    background-color: white ;
+    background-color: ${palette.secondColor} ;
     justify-content: space-between;
+    /* dassda */
 `
 
 const Title = styled.h4`
-
+    color: ${palette.thirdColor};
+    margin-left: 10px ;
+    /* box-shadow: rgb(255, 131, 3) 0px 2px 4px 0px, rgb(255, 131, 3) 0px 2px 1px 0px; */
 `
 const P = styled.p`
     display: flex;
     align-items: center;
+    color: ${palette.fourthColor};
+    text-decoration: underline ;
+    font-size:120% ;
+    margin-right: 10px;
+    /* agrega bordes a las letras  */
+    /* -webkit-text-stroke: 1px black; */
+    color: white; 
 
 `
 
