@@ -5,6 +5,7 @@ const fourthColor = '#ffff'
 const fifthColor = 'rgba(163, 87, 9, 0.4)'
 const sixthColor = 'rgba(163, 87, 9, 0.3)'
 const seventhColor = '#F0E3CA'
+const eighthColor = '#A35709'
 
 export {
     firstColor,
@@ -13,5 +14,6 @@ export {
     fourthColor,
     fifthColor,
     sixthColor,
-    seventhColor
+    seventhColor,
+    eighthColor
 }

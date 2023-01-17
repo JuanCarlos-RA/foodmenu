@@ -186,7 +186,7 @@ const HamburgerCards = () => {
 const QuesadillaCards = () => {
     return (
         <CardsContainer>
-            <Card name={"Quesadilla Mechada"} url={"/hamburger.jpg"} description={"Tortilla de harina, Carne Mechada, Queso fundido, Guacamole y Salsas. Acompañada de papas fritas o papas en gajos."} price={"4.250"} />
+            <Card name={"Quesadilla Mechada"} url={"/hamburger.jpg"} description={"- Tortilla de harina - Carne Mechada - Queso fundido - Guacamole y Salsas Acompañada de papas fritas o papas en gajos."} price={"4.250"} />
             <Card name={"Quesadilla de Pollo"} url={"/hamburger.jpg"} description={"Tortilla de harina, Pollo en fajitas, Queso fundido, Guacamole y Salsas. Acompañada de papas fritas o papas en gajos."} price={"4.250"} />
             <Card name={"Quesadilla de Lomo"} url={"/hamburger.jpg"} description={"Tortilla de harina, Lomo en fajitas, Queso fundido, Guacamole y Salsas. Acompañada de papas fritas o papas en gajos."} price={"4.550"} />
             <Card name={"Hot Quesadilla"} url={"/hamburger.jpg"} description={"Tortilla de harina, Carne mechada, Chile jalapeño, Queso fundido, Guacamole, Salsa picante Mamen y salsas. Acompañada de papas fritas o papas en gajos."} price={"4.350"} />

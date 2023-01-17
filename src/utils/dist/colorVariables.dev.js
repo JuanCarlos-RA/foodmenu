@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.seventhColor = exports.sixthColor = exports.fifthColor = exports.fourthColor = exports.thirdColor = exports.secondColor = exports.firstColor = void 0;
+exports.eighthColor = exports.seventhColor = exports.sixthColor = exports.fifthColor = exports.fourthColor = exports.thirdColor = exports.secondColor = exports.firstColor = void 0;
 var firstColor = 'black';
 exports.firstColor = firstColor;
 var secondColor = '#1B1A17';
@@ -18,3 +18,5 @@ var sixthColor = 'rgba(163, 87, 9, 0.3)';
 exports.sixthColor = sixthColor;
 var seventhColor = '#F0E3CA';
 exports.seventhColor = seventhColor;
+var eighthColor = '#A35709';
+exports.eighthColor = eighthColor;
