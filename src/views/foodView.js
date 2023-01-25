@@ -96,10 +96,10 @@ const FoodView = () => {
 }
 
 const CardsContainer = styled.div`
-    margin-top: 20% ;
+    margin-top: 33% ;
     display: flex;
     flex-flow: wrap;
-    justify-content: space-around;
+    text-align: center;
     
 `
 
@@ -110,7 +110,7 @@ const HamburgerCards = () => {
     return (
         <CardsContainer>
             <Card name={"Hamburguesa Sencilla"}
-                url={"/hamburger.jpg"}
+                url={"https://assets.unileversolutions.com/recipes-v2/232055.jpg?imwidth=350"}
                 description={"Pan artesanal, Torta de carne artesanal de 200 o filet de pollo, Lechuga, Tomate, Queso blanco, Queso amarillo, Tocineta y Salsas. Acompañada de papas fritas o papas en gajos"}
                 price={"3.750"}
             />
@@ -186,7 +186,7 @@ const HamburgerCards = () => {
 const QuesadillaCards = () => {
     return (
         <CardsContainer>
-            <Card name={"Quesadilla Mechada"} url={"/hamburger.jpg"} description={"Tortilla de harina, Carne Mechada, Queso fundido, Guacamole y Salsas. Acompañada de papas fritas o papas en gajos."} price={"4.250"} />
+            <Card name={"Quesadilla Mechada"} url={"/hamburger.jpg"} description={"- Tortilla de harina - Carne Mechada - Queso fundido - Guacamole y Salsas Acompañada de papas fritas o papas en gajos."} price={"4.250"} />
             <Card name={"Quesadilla de Pollo"} url={"/hamburger.jpg"} description={"Tortilla de harina, Pollo en fajitas, Queso fundido, Guacamole y Salsas. Acompañada de papas fritas o papas en gajos."} price={"4.250"} />
             <Card name={"Quesadilla de Lomo"} url={"/hamburger.jpg"} description={"Tortilla de harina, Lomo en fajitas, Queso fundido, Guacamole y Salsas. Acompañada de papas fritas o papas en gajos."} price={"4.550"} />
             <Card name={"Hot Quesadilla"} url={"/hamburger.jpg"} description={"Tortilla de harina, Carne mechada, Chile jalapeño, Queso fundido, Guacamole, Salsa picante Mamen y salsas. Acompañada de papas fritas o papas en gajos."} price={"4.350"} />
