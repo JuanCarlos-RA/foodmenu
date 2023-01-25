@@ -2,82 +2,79 @@ import styled from "styled-components"
 import * as palette from '../utils/colorVariables'
 
 const Cardboard = styled.div` 
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    /* box-shadow: ${palette.fifthColor} 0px 4px 6px, ${palette.sixthColor} 0px 9px 15px -1px, rgba(0, 0, 0, 0.2) 1px -1px 1px inset; */
+   
     box-shadow: rgb(163, 87, 9) 0px 5px 5px 0px, rgb(163, 87, 9) 0px 1px 3px 1px;
     border-radius: 5% 5% 2% 2%;
     border: 2px solid ${palette.secondColor};
-    background-color: ${palette.seventhColor} ;
-    margin-bottom: 26px;
-    margin-top: 80px ;
-    width: 320px;
-    height: 400px;
+    background-color: ${palette.fourthColor} ;
+    width: 345px;
+    height: auto;
+
+    margin: 0px auto;
+    margin-bottom: 25%;
+    display: flex;
+    flex-flow: column ;
+    justify-content: space-between ;
+
+
+    transition: width 2s, height 4s;
     
 `
 
 const Img = styled.img`
-    left: 100px;
     width:240px ;
     height:200px ;
-    /* border: 2px solid ${palette.secondColor}; */
     border-radius: 15% 15% 10% 10%;
-    margin-bottom: 20% ;
-    margin-top: -25%;
-    margin-left: 12% ;
     box-shadow: rgba(14, 30, 37, 0.80) 0px 2px 4px 0px, rgba(14, 30, 37, 1) 0px 2px 16px 0px;
+
+    margin: 0px auto ;
+    margin-top: -20%;
 `
 
-const Container = styled.div` 
-    /* Este margin-top esta cubriendo un bug de una pequeña franja que 
-    queda entre la imagen y el container (Me parece que es una mala practica)*/
-    margin-top: -4px ;
-    display: flex;
-    flex-flow: wrap ;
+const ContainerDetails = styled.div` 
+    
     background-color: ${palette.secondColor} ;
-    justify-content: space-between;
 
-    /* dassda */
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-between;
+    padding-left: 2% ;
+    padding-right: 2% ;
 `
 
 const Title = styled.h4`
     
     color: ${palette.firstColor};
-    margin-left: 10px ;
     text-shadow: -1px 0 ${palette.thirdColor}, 0 1px ${palette.thirdColor}, 
     1px 0 ${palette.thirdColor}, 0 -1px ${palette.thirdColor};
     letter-spacing: 2px ;
 
-    /* box-shadow: rgb(255, 131, 3) 0px 2px 4px 0px, rgb(255, 131, 3) 0px 2px 1px 0px; */
 `
-const P = styled.p`
-    display: flex;
-    align-items: center;
+const Price = styled.p`
     color: ${palette.fourthColor}; 
     font-size:120% ;
-    margin-right: 10px;
     text-shadow: -1px 0 white, 0 1px white,
 	  1px 0 white, 0 -1px white;
-    /* agrega bordes a las letras  */
-    /* -webkit-text-stroke: 1px black; */
     color: black; 
 
 `
 const TextDescription = styled.p`
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    font-style: normal ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-variant: small-caps ;
+
+    font-weight: bold ;
 
 `
 const ContainerDescription = styled.div`
     padding: 2% ;
-    width: 280px;
-    border: 2px solid ${palette.fifthColor};
-    margin-bottom: -10% ;
-    margin-top: -30%;
-    margin-left: 4.3% ;
+    border-left: 2px solid ${palette.fifthColor};
+    border-right: 2px solid ${palette.fifthColor};
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px, rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+    
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 5%;
+    margin-bottom: 5% ;
 `
 
 
@@ -91,10 +88,10 @@ const Card = ({ name, description, price, url }) => {// Pordria tener otro campo
             <ContainerDescription>
                 <TextDescription>{description}</TextDescription>
             </ContainerDescription>
-            <Container>
+            <ContainerDetails>
                 <Title><b>{name}</b></Title>
-                <P>{price} ₡</P>
-            </Container>
+                <Price>{price} ₡</Price>
+            </ContainerDetails>
         </Cardboard>
     )
 }
